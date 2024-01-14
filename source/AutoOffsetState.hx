@@ -254,7 +254,7 @@ class AutoOffsetState extends MusicBeatState
 	function exit():Void {
 		FlxG.sound.music.fadeOut(0.4);
 		ending = true;
-		Config.write(offsetCalc, Config.accuracy, Config.healthMultiplier, Config.healthDrainMultiplier, Config.betterIcons, Config.downscroll, Config.downscroll, Config.noteGlow, Config.noFpsCap, Config.botplay, Config.controllerScheme);
+		Config.write(offsetCalc, Config.accuracy, Config.healthMultiplier, Config.healthDrainMultiplier, Config.betterIcons, Config.downscroll, Config.downscroll, Config.noteGlow, Config.noFpsCap, Config.controllerScheme, Config.botplay);
 		FlxG.switchState(new ConfigMenu());
 	}
 }
